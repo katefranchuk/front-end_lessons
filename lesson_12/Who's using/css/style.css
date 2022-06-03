@@ -1,0 +1,225 @@
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+:root {
+	--main-font: 'Francois One', sans-serif;
+	--main-font-color: #000000;
+ }
+html, body{
+	height: 100%;
+	min-width: 320px;
+}
+body{
+	font-family: var(--main-font);
+	color: var(--main-font-color);
+	height: 250vh;
+ }
+
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+/* ------------------------------------------------------- */
+.container{
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* ------------------------------------------------------- */
+.header{
+	position: fixed;
+	width: 100%;
+	background-color: #ffffff;
+}
+.header__container{
+	padding-top: 13px;
+	padding-bottom: 13px;
+	max-height: 80px;
+}
+.header__nav{
+	display: flex;
+	align-items: center;
+}
+.header__toggle{
+	font-family: 'Tourney', cursive;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 18px;
+	letter-spacing: 0.04em;
+	color: var(--main-font-color);
+	text-transform: uppercase;
+	margin-right: 50px;
+}
+.header__menu{
+	display: flex;
+	font-family: var(--nav-font);
+}
+.header__link, .header__link--slash{
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 28px;
+	letter-spacing: 0.03em;
+	color: var(--main-font-color);
+}
+.header__link--slash::after{
+	content: "/";
+	padding: 0 10px;
+}
+.header__logo{
+	margin-left: auto;
+}
+/* ------------------------------------------------------- */
+.page{
+	padding: 150px 0 0 0;
+}
+.page__container{
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.page__line{
+	width: 100px;
+	height: 8px;
+	background: #000000;
+}
+.page__title{
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 48px;
+	letter-spacing: 0.04em;
+	margin-left: 20px;
+}
+/* ------------------------------------------------------- */
+.brends__container{
+  border-top: 1px solid #C9C9C9;
+  border-bottom: 1px solid #C9C9C9;
+}
+.brends__inner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0 20px 0;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+.brend__logo{
+  border-radius: 8px;
+  background-color:  #E6E6E6;
+  width: 270px;
+  height: 180px;
+  transition-duration: 1.2s;
+}
+.brend__logo:hover{
+   transform: rotateX(360deg);
+   background-color: #000;
+}
+
+.brend__logo:first-child{
+background-image: url(../img/facebook-logo.png);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.brend__logo:first-child:hover{
+  background-image: url(../img/facebook-logo-white.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.brend__logo:nth-child(2){
+	background-image: url(../img/instagram-logo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+ }
+
+ .brend__logo:nth-child(2):hover{
+	background-image: url(../img/instagram-logo-white.png);
+	background-repeat: no-repeat;
+	background-position: center;
+ }
+
+.brend__logo:nth-child(3){
+	background-color:#000;
+	background-image: url(../img/shopify-logo-white.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.brend__logo:nth-child(3):hover{
+	background-color: #E6E6E6;
+	background-image: url(../img/shopify-logo-black.png);
+	background-repeat: no-repeat;
+	background-position: center;
+ }
+
+.brend__logo:nth-child(4){
+	background-image: url(../img/skype-logo-black.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.brend__logo:nth-child(4):hover{
+	background-image: url(../img/skype-logo-white.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.brend__logo:nth-child(5){
+	background-image: url(../img/pinterest-logo-black.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.brend__logo:nth-child(5):hover{
+	background-image: url(../img/pinterest-logo-white.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.brend__logo:nth-child(6){
+	background-image: url(../img/wix.com-logo-black.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.brend__logo:nth-child(6):hover{
+	background-image: url(../img/wix.com-logo-white.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.brend__logo:nth-child(7){
+	background-image: url(../img/saleforse-logo-black.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.brend__logo:nth-child(7):hover{
+	background-image: url(../img/saleforse-logo-white.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.brend__logo:nth-child(8){
+	background-image: url(../img/soundcloud-logo-black.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.brend__logo:nth-child(8):hover{
+	background-image: url(../img/soundcloud-logo-white.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
