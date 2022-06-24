@@ -1,0 +1,49 @@
+.about{
+	margin: 128px 0;
+	.hero-about{
+		&__inner{
+			display: flex;
+			gap: 148px;
+		}
+		&__main-info{
+			flex: 0 1 50%;
+		}
+		&__title{
+			padding-bottom: 39px;
+		}
+		&__sub-title{
+			padding-bottom: 19px;
+		}
+		span{
+			display: block;
+		}
+		&__photo{
+			width: 45%;
+		}
+		&__preface{
+			flex: 0 1 50%;
+		}
+		&__description{
+			display: flex;
+			flex-direction: column;
+			min-width: 540px;
+			gap: 42px;
+			height: 100%;
+		}
+		&__text{
+			
+		}
+		&__button{
+			margin-top: auto;
+			display: flex;
+		}
+
+		&__button-grey{
+			padding: 8px 34px;
+		}
+		&__arrow{
+			margin-left: 8px;
+		}
+	}
+	
+}

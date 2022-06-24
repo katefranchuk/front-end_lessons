@@ -2,6 +2,7 @@ body {
 	height: 100%;
 	font-family: $main-font;
 }
+
 .page-wrapper{
 	min-height: 100vh;
 	display: flex;
@@ -12,12 +13,19 @@ body {
     min-width: 135px;
     display: block;
     margin-right: 50px;
+	 z-index: 10;
+    position: relative;
 }
 
 .container {
     max-width: 1179px;
     margin: 0 auto;
-    padding: 0 20px;
+	 padding: $conteiner-size;
+
+	 //@media (max-width: $tab) {
+		//font-size: 33px;
+		//line-height: 50px;
+	//}
 }
 
 .title {
@@ -27,15 +35,25 @@ body {
     letter-spacing: 0.05em;
     color: $color-black;
     font-family: $sub-font;
+
+	 @media (max-width: $tab) {
+		font-size: 33px;
+		line-height: 50px;
+  	}
 }
 
 .sub-title {
     font-weight: 400;
     font-size: 23px;
-    line-height: 166%;
+	 line-height: 38px;
     letter-spacing: 0.1em;
     color: $color-black;
     font-family: $sub-font;
+
+	 @media (max-width: $tab) {
+		font-size: 16px;
+		line-height: 27px;
+  	}
 }
 
 .text {
@@ -43,18 +61,62 @@ body {
     font-size: 19px;
     line-height: 32px;
     letter-spacing: 0.05em;
-    color:$color-black;
+    color:$color-text;
+
+	 @media (max-width: $tab) {
+	 font-size: 16px;
+	 line-height: 27px;
+  	}
 }
 
-.contacts-text{
+.h6{
 	font-weight: 400;
 	font-size: 16px;
-	line-height: 166%;
+	line-height: 27px;
 	letter-spacing: 0.1em;
-	color: $color-black;
+	color: $color-grey;
+
+	&--black {
+		color: $color-black;
+  	}
 }
 
-.main{
+.h9{
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 27px;
+	letter-spacing: 0.1em;
+	color: $color-grey;
+}
+
+.h5{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 27px;
+	letter-spacing: 0.05em;
+	color: $color-text;
+}
+
+main{
 	flex: 1 1 auto;
-	padding-top: 122px;
+	//padding-top: 122px;
+}
+
+.arrow{
+	width: 23px;
+}
+
+.button-grey{
+	display: inline-block;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 27px;
+	letter-spacing: 0.1em;
+	color: $button-text;
+	background-color: $button-bg;
+}
+
+.social-media__icon{
+	width: 50px;
+	height: 50px;
 }

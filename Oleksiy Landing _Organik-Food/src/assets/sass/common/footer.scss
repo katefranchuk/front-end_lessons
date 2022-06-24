@@ -1,0 +1,91 @@
+.footer{
+
+	&__container{
+		display: flex;
+		justify-content: center;
+		gap: 52px;
+
+		@media (max-width:$tab) {
+			flex-direction: column;
+		}
+	}
+	&__contacts{
+		flex: 0 1 25%;
+		text-align: right;
+		border-right: 1px solid  #D5D5D5;
+		padding-right: 19px;
+	}
+
+	&__list{
+		margin-bottom: 33px;
+	}
+
+	&__connect{
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 23px;
+	letter-spacing: 0.36px;
+	color: #525C60;
+	margin-bottom: 5px;
+	}
+
+	&__item{
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 29px;
+	letter-spacing: 0.36px;
+	color: #525C60;
+	}
+
+	&__social-media{
+		flex: 0 1 50%;
+		text-align: center;
+	}
+
+	&__functions{
+		margin-bottom: 24px;
+	}
+
+	&__logo{
+		display: inline-block;
+		width: 25%;
+		margin-bottom: 50px;
+
+		@media (max-width:$tab) {
+			width: 50%;
+		}
+	}
+
+	&__title{
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 42px;
+		letter-spacing: 0.36px;
+		color: #274C5B;
+		margin-bottom: 34px;
+	}
+
+	&__social-media-list{
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+	}
+
+	&__text{
+		margin-bottom: 60px;
+	}
+	
+	&__utility{
+		flex: 0 1 25%;
+		border-left: 1px solid #D5D5D5;
+		padding-left: 19px;
+		
+	}
+
+}

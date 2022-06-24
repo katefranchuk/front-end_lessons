@@ -2,94 +2,182 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--Шлях до css це відносний шлях не залежить від папки-->
-    <link rel="stylesheet" href="@@webRoot/css/bundle.min.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!--Шлях до css це відносний шлях не залежить від папки-->
+	<link rel="stylesheet" href="@@webRoot/css/bundle.min.css">
 </head>
 
 <body>
-    <div class="page-wrapper">
-        <header class="header">
-            <div class="container header__containe">
-                <div class="header__logo">
-                    <a class="logo" href="./index.html">
-                        <img src="@@webRoot/img/logo.svg" alt="logo">
-                    </a>
-                </div>
-                <nav class="header__nav">
-                    <ul class="header__menu">
-                        <li class="header__menu-item">
-                            <a href="./index.html" class="header__link header__link--active">Home</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a href="./page/about.html" class="header__link">About</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a href="./page/works.html" class="header__link">Works</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a href="./page/blog.html" class="header__link">Blog</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a href="./page/contacts.html" class="header__link">Contacts</a>
-                        </li>
-                    </ul>
-                    <div class="header__serch">
-                        <img src="@@webRoot/img/serch.svg" alt="serch icon">
-                    </div>
-                </nav>
-            </div>
-        </header>
-		  <main class="main">
-				<section class="hero">
-						<div class="container">
-							<h1 class="title">Home</h1>
-						</div>
-
-				</section>
-		  </main>
-        <footer class="footer">
-            <div class="container footer__container">
-					<div class="footer__contacts">
-						<h2 class="footer__title title">Need a project?</h2>
-						<address class="footer__address">
-							<a class="footer__link contacts-text" href="tell:(239) 555-0108">(239) 555-0108</a>
-							<a class="footer__link contacts-text" href="mailto:tanya.hill@example.com">tanya.hill@example.com</a>
-						</address>
-					</div>
-					<div class="footer__media">
-						<ul class="footer__list">
-							<li class="footer__item"> 
-								<a class="footer__link contacts-text"	href="#">Facebook</a>
+	<div class="page-wrapper">
+		<header class="header">
+			<div class="container header__container">
+				<div class="header__logo">
+					<a class="logo" href="@@webRoot/index.html">
+						<img src="@@webRoot/img/logo.svg" alt="logo">
+					</a>
+				</div>
+				<nav class="header__nav">
+					<div class="gam-btn">
+						<input class="gam-btn__input" id="menu" type="checkbox">
+						<label class="gam-btn__label" for="menu">
+							<div class="gam-btn__menu">
+								<div class="gam-btn__line gam-btn__line--first"></div>
+								<div class="gam-btn__line gam-btn__line--second"></div>
+								<div class="gam-btn__line gam-btn__line--third"></div>
+							</div>
+						</label>
+						<ul class="header__menu">
+							<li class="header__menu-item">
+								<a href="./index.html" class="header__link header__link--active">Home</a>
 							</li>
-							<li class="footer__item"> 
-								<a class="footer__link contacts-text"	href="#">Instagram</a>
+							<li class="header__menu-item">
+								<a href="./page/about.html" class="header__link">About</a>
 							</li>
-							<li class="footer__item"> 
-								<a class="footer__link contacts-text"	href="#">Dribbble</a>
+							<li class="header__menu-item">
+								<a href="./page/works.html" class="header__link">Works</a>
 							</li>
-							<li class="footer__item"> 
-								<a class="footer__link contacts-text"	href="#">Linkedin</a>
+							<li class="header__menu-item">
+								<a href="./page/blog.html" class="header__link">Blog</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="./page/contacts.html" class="header__link">Contacts</a>
 							</li>
 						</ul>
 					</div>
-					<div class="footer__copyright">
-						<p class="footer__text">© Copyright Manifest Theme. <br>	Allrights reserved</p>
+					<div class="header__serch">
+						<img src="@@webRoot/img/serch.svg" alt="serch icon">
 					</div>
-					
-            </div>
+				</nav>
+			</div>
+		</header>
+		<main class="home">
+			<section class="hero">
+				<div class="container hero__container">
+					<h1 class="title hero__title">Manifest is a newborn theme. Clean, simple and fast.</h1>
+				</div>
+			</section>
+			<section class="slider">
+				<div class="slider__container">
+					<div class="slider__item">
+						<img class="slider__img" src="@@webRoot/img/slider/slider01.jpg" alt="slide 01">
+						<h5 class="slider__title sub-text">
+							 Mocha
+						</h5>
+					</div>
+					<div class="slider__item">
+						<img class="slider__img" src="@@webRoot/img/slider/slider02.jpg" alt="slide 02">
+						<h5 class="slider__title sub-text">
+							 Mixkit Inspo
+						</h5>
+				   </div>
+				   <div class="slider__item">
+						<img class="slider__img" src="@@webRoot/img/slider/slider03.jpg" alt="slide 03">
+						<h5 class="slider__title sub-text">
+							 Abalone
+						</h5>
+				   </div>
+				   <div class="slider__item">
+						<img class="slider__img" src="@@webRoot/img/slider/slider04.jpg" alt="slide 04">
+						<h5 class="slider__title sub-text">
+							 Dreamy
+						</h5>
+				   </div>
+				</div>
+			</section>
+			<section class="info">
+				<div class="container info__container">	
+					<div class="info__inner">
+						<h2 class="info__title sub-title">Full-time UI/UX designer <span class="info__title--line-break">Head of Design at VeronaLabs.com</span></h2>
+						<div class="info__arrow">
+							<img class="latest-posts__arrow arrow" src="@@webRoot/img/arrow.svg" alt="arrow">
+						</div>
+					</div>	
+					<div class="info__content">
+						<p class="info__text text">We work with clients around the world from our headquarters in Charleston, South Carolina.</p>
+						<p class="info__text text">We focus on naming, branding, brand narratives, website design and development, and brand experiences.</p>
+					</div>
+				</div>
+			</section>
+			<section class="latest-posts">
+				<div class="container latest-posts__container">
+					<div class="latest-posts__header">
+						<h2 class="latest-posts__title sub-title">Latest Posts</h2>
+						<a href="@@webRoot/page/blog.html" class="latest-posts__view-all h6">View All
+							<img class="latest-posts__arrow arrow" src="@@webRoot/img/arrow.svg" alt="arrow">
+						</a>
+					</div>
+					<div class="latest-posts__posts">
+						<a class="posts" href="@@webRoot/posts/post01.html">
+							<img class="posts__image" src="@@webRoot/img/posts/latest-posts/post01.jpg" alt="the first post image">
+							<div class="posts__description">
+								<p class="posts__category h9">Interface Design</p>
+                			<p class="posts__date h9">8 June, 2020</p> 
+              			</div>
+							<h2 class="posts__title sub-title">UX traffic light colours</h2>
+							<p class="posts__text h5">UI has to make a huge visual difference between warning, an alert and a success.</p>
+						</a>
+						<a class="posts" href="@@webRoot/posts/post02.html">
+							<img class="posts__image" src="@@webRoot/img/posts/latest-posts/post02.jpg" alt="the second post image">
+							<div class="posts__description">
+								<p class="posts__category h9">Technology</p>
+                			<p class="posts__date h9">6 May, 2020</p> 
+              			</div>
+							<h2 class="posts__title sub-title">Using UX Design to Build a Sustainable Future</h2>
+							<p class="posts__text h5">Transformation has to be driven by everybody, not just by climate groups.</p>
+						</a>
+						<a class="posts" href="@@webRoot/posts/post03.html">
+							<img class="posts__image" src="@@webRoot/img/posts/latest-posts/post03.jpg" alt="the third post image">
+							<div class="posts__description">
+								<p class="posts__category h9">Visual Design</p>
+                			<p class="posts__date h9">8 June, 2020</p> 
+              			</div>
+							<h2 class="posts__title sub-title">Creativity vs. UX</h2>
+							<p class="posts__text h5">Is it possible to create a delightful user experience without following best UX practices?</p>
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container footer__container">
+				<div class="footer__contacts">
+					<h2 class="footer__title title">Need a project?</h2>
+					<address class="footer__address">
+						<a class="footer__link h6" href="tell:(239) 555-0108">(239) 555-0108</a>
+						<a class="footer__link h6" href="mailto:tanya.hill@example.com">tanya.hill@example.com</a>
+					</address>
+				</div>
+				<div class="footer__media">
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a class="footer__link h6" href="#">Facebook</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link h6" href="#">Instagram</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link h6" href="#">Dribbble</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link h6" href="#">Linkedin</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__copyright">
+					<p class="footer__text">© Copyright Manifest Theme. <br> Allrights reserved</p>
+				</div>
+			</div>
+		</footer>
+	</div>
 
-        </footer>
-    </div>
 
 
-
-    <!--Обовязково додавати потрібно для JS -->
-    <script> var exports = {}; </script>
-    <script src="@@webRoot/js/index.js"></script>
+	<!--Обовязково додавати потрібно для JS -->
+	<script> var exports = {}; </script>
+	<script src="@@webRoot/js/index.js"></script>
 </body>
 
 </html>

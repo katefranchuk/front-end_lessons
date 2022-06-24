@@ -1,9 +1,13 @@
 .header {
-    padding: 96px 0 0;
-	 position: fixed;
-	 width: 100%;
+		margin-top: 96px;
+		//position: fixed;
+	 	//width: 100%;
 
-    &__containe {
+	 @media (max-width: $tab) {
+		margin-top: 26px;
+  	}
+
+    &__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -13,11 +17,31 @@
         display: flex;
         align-items: center;
         gap: 50px;
+
+		  @media (max-width: $tab) {
+			gap: 8px;
+			position: relative;
+	  }
     }
 
     &__menu {
         display: flex;
         gap: 50px;
+
+		  @media (max-width: $tab) {
+			display: none;
+			position: fixed;
+			width: 100%;
+			height: 100vh;
+			top: 50%;
+			left: 50%;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 26px;
+			transform: translate(-50%, -50%);
+			background-color: beige;
+	  		}
     }
 
     &__link {
@@ -25,8 +49,9 @@
         line-height: 16px;
         letter-spacing: 0.3em;
         text-transform: uppercase;
-        color: $color-black;
         position: relative;
+		  color: $color-black;
+	
 
         &::after {
             content: "";
@@ -49,10 +74,73 @@
                 width: 80%;
             }
         }
+
+		  @media (max-width: $tab) {
+			&::after {
+				 display: none;
+				}
+	  	  }
     }
 
     &__serch {
         width: 16px;
         height: 16px;
+		  z-index: 10;
     }
+}
+
+
+.gam-btn{
+	&__menu {
+	display: none;
+
+	@media (max-width: $tab) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 7px;
+		width: 32px;
+		height: 32px;
+		cursor: pointer;
+		order: 5;
+		transition-duration: .25s;
+		}
+	}
+	&__line {
+
+	@media (max-width: $tab) {
+		width: 24px;
+		height: 1px;
+		background: $color-black;
+		transition-duration: 0.25s;
+		}
+	}
+
+	&__label {
+		position: relative;
+		z-index: 10;
+	}
+
+	&__input {
+		display: none;
+		
+		&:checked {
+		~.header__menu {
+			display: flex;
+		}
+		~.gam-btn__label{
+			.gam-btn__line--first{
+				transform: rotate(45deg);
+				position: absolute; 
+			}
+			.gam-btn__line--second{
+				display: none;
+			}
+			.gam-btn__line--third{
+				transform: rotate(-45deg);
+			}
+		 }
+		}
+	}		
 }
