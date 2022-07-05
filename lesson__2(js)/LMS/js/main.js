@@ -1,17 +1,26 @@
 "use strict";
-//Мінімум 1 завдання
-let age = prompt('Вкаіть ваш вік', '');
+//Перше завдання
+//Перший спосіб
+let sum = 0.1 + 0.2;
+console.log(+sum.toFixed(1)); //0.3
 
-if (age <= 11){
-	message = 'Ви ще дитина!';
-} else if (age >= 12 && age <= 17){
-	message = 'Ви вже підліток!';
-} else if (age >=18 && age <= 59){
-	message = 'Ви дорослий!';
-} else if (age >=60) {
-	message = 'Ви пенсіонер!';
-}
-alert(message);
+//Другий спосіб
+let num = (0.1 + 0.2) + Number.EPSILON;
+let Num = Math.round(num * 100) / 100;
+console.log(Num);
+
+//Друге завдання
+//Перший спосіб
+let firstNum = +'1';
+let secondNum = 2;
+console.log(firstNum + secondNum); //3
+
+//Другий спосіб
+let string = '1';
+let number = 2;
+
+let stringToNumber = Number(string);
+console.log(stringToNumber + number); //3
 
 
 /* Третє завдання
@@ -33,7 +42,6 @@ console.log(`Кількість шоколадок: ${chocolateQuantity}, Реш
 */
 
 //Норма 1 завдання (2 спосіб)
-/*
 let moneyAmount = document.querySelector('.amount');
 let chocolatePrise = document.querySelector('.price');
 let button = document.querySelector('.btn');
@@ -41,11 +49,11 @@ let quantityResult = document.querySelector('.chocolate-quantity');
 let changeResult = document.querySelector('.change');
 
 button.onclick = () => {
-	 //quantityResult.innerHTML = Math.floor(moneyAmount / chocolatePrise);
-	 //changeResult.innerHTML = (moneyAmount % chocolatePrise).toFixed(2);
-	 quantityResult.innerHTML = moneyAmount / chocolatePrise;
+	//quantityResult.innerHTML = Math.floor(moneyAmount / chocolatePrise);
+	//changeResult.innerHTML = (moneyAmount % chocolatePrise).toFixed(2);
+	quantityResult.innerHTML = +moneyAmount.value / +chocolatePrise.value;
 }
-*/
+
 
 //Норма 2 завдання
 /*

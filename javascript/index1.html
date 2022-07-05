@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <p>Введите число от 1 до 100</p>
+    <input class="input" type="number" min="1" max="100">
+    <button class="btn">Submit</button>
+    <div class="out">
+
+    </div>
+    <script>
+        let inp = document.querySelector('.input');
+        let btn = document.querySelector('.btn');
+        let out = document.querySelector('.out');
+
+        let random = Math.floor(Math.random() * 100);
+        btn.onclick = () => {
+            let number = +inp.value;
+            if (number == random) {
+                out.innerHTML = "Угадал!!!";
+            }
+        }
+
+        console.log(random);
+    </script>
+</body>
+</html>
