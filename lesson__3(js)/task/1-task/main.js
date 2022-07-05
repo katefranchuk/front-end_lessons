@@ -6,17 +6,15 @@
 
 
 function t1() {
-	let i = 1;
-	let result;
-	while (i < 17) {
-		result = i++;
-	}
+
+		let result ='';
+	
 		
 	
-	//for (let i = 1; i < 17; i++) { 
-		//console.log(i);
-	 //}
-	 document.querySelector('.out-1').innerHTML = ;
+	for (let i = 1; i < 17; i++) { 
+		result += `${i}_`;
+	 }
+	 document.querySelector('.out-1').innerHTML = result;
 }
 
 document.querySelector('.b-1').onclick = t1;
