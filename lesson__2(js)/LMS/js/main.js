@@ -31,27 +31,29 @@ let fileQuantity = Math.floor(count);
 console.log(fileQuantity);
 */
 
-/* Норма 1 завдання (1 спосіб)
+//Норма 1 завдання (1 спосіб)
+/*
 let moneyAmount = +prompt('Вкажіть суму грошей в гаманці');
-let chocolatePrise = +prompt ('Вкажіть вартість шоколадки');
+let chocolatePrice = +prompt ('Вкажіть вартість шоколадки');
 
-let chocolateQuantity = Math.floor(moneyAmount / chocolatePrise);
-let change = (moneyAmount%chocolatePrise).toFixed(2);
+let chocolateQuantity = Math.floor(moneyAmount / chocolatePrice);
+let change = (moneyAmount%chocolatePrice).toFixed(2);
 
 console.log(`Кількість шоколадок: ${chocolateQuantity}, Решта: ${change} `);
 */
 
 //Норма 1 завдання (2 спосіб)
-let moneyAmount = document.querySelector('.amount');
-let chocolatePrise = document.querySelector('.price');
+
+let moneyAmount = document.querySelector('.input-amount');
+
+let chocolatePrice = document.querySelector('.input-price');
 let button = document.querySelector('.btn');
 let quantityResult = document.querySelector('.chocolate-quantity');
 let changeResult = document.querySelector('.change');
 
 button.onclick = () => {
-	//quantityResult.innerHTML = Math.floor(moneyAmount / chocolatePrise);
-	//changeResult.innerHTML = (moneyAmount % chocolatePrise).toFixed(2);
-	quantityResult.innerHTML = +moneyAmount.value / +chocolatePrise.value;
+	quantityResult.innerHTML = Math.floor(+moneyAmount.value / +chocolatePrice.value);
+	changeResult.innerHTML = (+moneyAmount.value % +chocolatePrice.value).toFixed(2);
 }
 
 

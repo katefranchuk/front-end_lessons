@@ -135,7 +135,7 @@ document.querySelector('.b-14').onclick = t14;
 //  По нажатию кнопки .b-15 выполняется функция t15. Она присваивает .i-15 свойство style.border = "4px solid red";
 
 function t15() {
-	document.querySelector('.i-15').style.border = "4px solid red";
+	document.querySelector('.i-15').style.border = '4px solid red';
 }
 
 document.querySelector('.b-15').onclick = t15;

@@ -8,11 +8,14 @@ const resultDisplay = document.querySelector('#result');
 const button = document.querySelector('#btn');
 const userChoice = document.querySelector('#choice');
 
+let player;
+let computer;
 let result;
 
 
 button.onclick = () => {
 	let randomNumber = Math.floor(Math.random() * 3) + 1;
+	
 	switch (randomNumber) {
 		case 1:
 			randomNumber = 'Rock';
@@ -81,7 +84,7 @@ button.onclick = () => {
 					break;
 			}
 	}
-	resultDisplay.innerHTML = result;
+	resultDisplay.innerHTML = `${result}`;
 }
 
 
