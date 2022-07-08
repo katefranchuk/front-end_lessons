@@ -8,52 +8,28 @@ const resultDisplay = document.querySelector('#result');
 const button = document.querySelector('#btn');
 const userChoice = document.querySelector('#choice');
 
-let player;
-let computer;
 let result;
+let computerChoice;
 
 
 button.onclick = () => {
 	let randomNumber = Math.floor(Math.random() * 3) + 1;
-	
 	switch (randomNumber) {
 		case 1:
-			randomNumber = 'Rock';
+			computerChoice = 'Rock';
 			break;
 		case 2:
-			randomNumber = 'Paper';
+			computerChoice = 'Paper';
 			break;
 		case 3:
-			randomNumber = 'Scissors';
+			computerChoice = 'Scissors';
 			break;
 	}
-	computerChoiceDisplay.innerHTML = randomNumber;
+	computerChoiceDisplay.innerHTML = computerChoice;
 
 	switch (+userChoice.value) {
-		case 0:
-			switch (randomNumber) {
-				case 0:
-					result = 'it\'s a draw!';
-					break;
-
-				case 1:
-					result = 'You lost!';
-					break;
-
-				case 2:
-					result = 'You are a winner!';
-					break;
-
-				default:
-					break;
-			}
-
 		case 1:
 			switch (randomNumber) {
-				case 0:
-					result = 'You are a winner!';
-					break;
-
 				case 1:
 					result = 'it\'s a draw!';
 					break;
@@ -62,16 +38,16 @@ button.onclick = () => {
 					result = 'You lost!';
 					break;
 
+				case 3:
+					result = 'You are a winner!';
+					break;
+
 				default:
 					break;
 			}
-
+			break;
 		case 2:
 			switch (randomNumber) {
-				case 0:
-					result = 'You lost!';
-					break;
-
 				case 1:
 					result = 'You are a winner!';
 					break;
@@ -80,11 +56,34 @@ button.onclick = () => {
 					result = 'it\'s a draw!';
 					break;
 
+				case 3:
+					result = 'You lost!';
+					break;
+
 				default:
 					break;
 			}
+			break;
+		case 3:
+			switch (randomNumber) {
+				case 1:
+					result = 'You lost!';
+					break;
+
+				case 2:
+					result = 'You are a winner!';
+					break;
+
+				case 3:
+					result = 'it\'s a draw!';
+					break;
+
+				default:
+					break;
+			}
+			break;
 	}
-	resultDisplay.innerHTML = `${result}`;
+	resultDisplay.innerHTML = result;
 }
 
 
